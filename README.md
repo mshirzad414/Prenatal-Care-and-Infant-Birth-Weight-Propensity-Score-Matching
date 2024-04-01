@@ -65,9 +65,9 @@ The results show that prenatal care is significant in both cases even after cons
 
 
 
-## Lastly, 
+## Summary
 
-Using propensity scores, we constructed a matched dataset that enabled us to compare treated units with untreated units while considering all matched observables. Our analysis reveals that prenatal care is a significant factor in determining infant weight. Although the impact is small, it remains statistically significant. The code for this study can be found in the "care_psm.R" file in the repository for your reference.
+This study assesses the impact of receiving prenatal care during the first trimester of pregnancy on subsequent infant birth weight in grams, employing propensity score matching techniques in R to account for various determinants of birth weight. Leveraging data from Cattaneo's 2010 study, encompassing 4,642 observations across 23 variables, the analysis focuses on eight key variables influencing birth weight outcomes. The first stage involves loading the data, examining the distribution of birth weight across treated and untreated units, revealing a mean difference of 147 grams. The second stage involves matching treated and untreated units based on propensity scores calculated from observable covariates, aiming to investigate the specific impact of early prenatal care on birth weight. The analysis indicates a statistically significant positive impact of receiving prenatal care during the first trimester of pregnancy on subsequent infant birth weight, underscoring the importance of early maternal healthcare interventions.
 
 
 
