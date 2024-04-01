@@ -14,12 +14,9 @@ In this study, the outcome variable is birth weight (bweight), the treatment dum
 ![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/2a64cc7e-e17d-44bf-a879-2b3608a49e9d)
 
 
-
-prenatal1	 mean_bweight
-   	     0       	 3244
-  	     1       	 3391
-![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/c0a179f4-7a9f-4ab4-ac1c-bd4e702f2016)
-
+Mean difference in infant weights across treated and not treated
+Trated   Not Trated
+3244      3391
 
 The initial datasets includes that the mean-difference across trated and control units for the outcome variable is around 150 grams
 
@@ -35,8 +32,10 @@ The last section of the figures below shows that there are 3,720 treated units a
 
 Applied researchers may sometimes be concerned about discarding a large number of unmatched participants. However, this is usually not an issue if all treated participants are matched, and good balance is achieved.
 Below illustrates the matching process across observations using both desity and histogram illustration
-![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/8a7eb366-28f0-4dea-a5dd-ecffc04c33b7)
-![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/3ca2acd7-8586-45de-a05d-c810bd4b9b06)
+![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/50eefc0e-8cd9-41a7-81e4-b8e3c8b1ed2e)
+
+![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/8cae698a-fd24-42d5-938b-83f647b1ba04)
+
 
 ## Third Stage:
 
@@ -44,13 +43,13 @@ Now we shows the mean-differnce of the outcome variable across treated and not t
 ![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/9288c4e2-a14f-4c57-915e-455103eebe54)
 
 Next; We run regression over the matched data to analyze the impact of prenatal care on infant birth weight, both with and without considering other covariates. This analysis helps us understand the direct effect of prenatal care on birth weight while controlling for potential confounding factors.
-t test of coefficients:
 
-###           Estimate  Std. Error t value  Pr(>|t|)    
+t test of coefficients:
+           Estimate  Std. Error t value  Pr(>|t|)    
 (Intercept) -0.25772977  0.06147678 -4.1923 2.892e-05 ***
 bweight      0.00022338  0.00001807 12.3622 < 2.2e-16 ***
 ---
-### Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 The results show that prenatal care is significant in both cases even after considering other confounders. This suggests that prenatal care has a meaningful impact on infant birth weight, regardless of the presence of other covariates.
 ===============================================
