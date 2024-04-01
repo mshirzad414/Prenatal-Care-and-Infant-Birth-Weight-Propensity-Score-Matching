@@ -22,8 +22,8 @@ Now, let's consider the main study objective: to investigate the impact of prena
 ## Second stage:
 We match each prenatal1=1 (treated) and =0 (not treated) based on their propensity scores, which are calculated using a range of covariates. To perform this matching, we utilize the Matchit package in R and evaluate the results as follows:
 The below shows the summart of balance for all data using propensity score matching:
+![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/a43f5f70-dbff-4bb3-b90b-5ea50c318cd6)
 
-![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/daf45dcf-2d58-4511-8de6-da7cf21333e6)
 
 
 
