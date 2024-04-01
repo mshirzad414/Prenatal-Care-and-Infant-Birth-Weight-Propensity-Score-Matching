@@ -35,16 +35,19 @@ The last section of the figures below shows that there are 3,720 treated units a
 Applied researchers may sometimes be concerned about discarding a large number of unmatched participants. However, this is usually not an issue if all treated participants are matched, and good balance is achieved.
 Below illustrates the matching process across observations using both desity and histogram illustration
 
-![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/50eefc0e-8cd9-41a7-81e4-b8e3c8b1ed2e)
+![dist psm](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/1f9c024c-4f92-4379-b3bd-c6e1dcd86045)
 
-![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/8cae698a-fd24-42d5-938b-83f647b1ba04)
+
+![hist](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/cfd0f046-2684-423a-accc-77404a45c5dc)
+
 
 
 ## Third Stage:
 
 Now we shows the mean-differnce of the outcome variable across treated and not trated unit using matched data constructed before.The bar chart shows a differnece of over 300 grams in infanct weight across treated units and control units, which is higher compared to mean-differnece of infanct weight in the original data. 
 
-![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/7eb72722-5f76-48a6-94d7-00d57b9c3483)
+![mean_diff](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/8d05b343-c0a0-48d0-8a90-21346243a16c)
+
 
 
 Next; We run regression over the matched data to analyze the impact of prenatal care on infant birth weight, both with and without considering other covariates. This analysis helps us understand the direct effect of prenatal care on birth weight while controlling for potential confounding factors.
