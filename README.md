@@ -18,7 +18,7 @@ In this study, the outcome variable is birth weight (bweight), the treatment dum
       <dbl>        <dbl>
 1         0        3244.
 2         1        3391.
-![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/d24c4fca-cecd-49a6-b4f9-58685891a8c2)
+
 
 
 The initial datasets includes that the mean-difference across trated and control units for the outcome variable is around 150 grams
