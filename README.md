@@ -1,11 +1,12 @@
 # Prenatal-Care-and-Infant-Brith-Weight-Propensity-Score-Matching
 Evaluates the impact of prenatal care in the first trimester of pregnancy on subsequent birth weight in grams, with matching on several other determinants of weight
 
-###This project measure the impact  of prenatal care during the first trimester of pregnancy on subsequent birth weight in grams. This project focuses on understanding the relationship between early prenatal care and infant birth weight, leveraging propensity score matching techniques in R. The analysis is based on data extracted from the renowned study by Cattaneo (2010) published in the Journal of Econometrics (Volume 155, pages 138-154), which encompasses 4,642 observations across 23 variables related to factors influencing infant birth weight. However, our study specifically considers eight key variables that play a crucial role in determining birth weight outcomes. The varaible desciption is listed below. 
+### This project measure the impact  of prenatal care during the first trimester of pregnancy on subsequent birth weight in grams. This project focuses on understanding the relationship between early prenatal care and infant birth weight, leveraging propensity score matching techniques in R. The analysis is based on data extracted from the renowned study by Cattaneo (2010) published in the Journal of Econometrics (Volume 155, pages 138-154), which encompasses 4,642 observations across 23 variables related to factors influencing infant birth weight. However, our study specifically considers eight key variables that play a crucial role in determining birth weight outcomes. The varaible desciption is listed below. 
+
 ### Variables Description
 ![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/7d865f16-94e5-4c83-b42c-caf78b89b235)
 For code used in this study, please refer to the care_psm.R in the repository. 
-##First stage:
+###First stage:
 We begin by loading the data and observing the distribution of the outcome variable, noting how it differs between treated and untreated units.
 In this study, the outcome variable is birth weight (bweight), the treatment dummy variable is prenatal1, and other factors represent observable covariates.
 ![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/499bf0a7-f28b-4ca0-87eb-a0c6196df3a5)
@@ -13,6 +14,7 @@ In this study, the outcome variable is birth weight (bweight), the treatment dum
       <dbl>        <dbl>
 1         0        3244.
 2         1        3391.
+
 The initial datasets includes that the mean-difference across trated and control units for the outcome variable is around 150 grams
 
 Now, let's consider the main study objective: to investigate the impact of prenatal care in the first trimester of pregnancy on subsequent birth weight using propensity score matching.
@@ -70,11 +72,11 @@ Now we shows the mean-differnce of the outcome variable across treated and not t
 Next; We run regression over the matched data to analyze the impact of prenatal care on infant birth weight, both with and without considering other covariates. This analysis helps us understand the direct effect of prenatal care on birth weight while controlling for potential confounding factors.
 t test of coefficients:
 
-               Estimate  Std. Error t value  Pr(>|t|)    
+###           Estimate  Std. Error t value  Pr(>|t|)    
 (Intercept) -0.25772977  0.06147678 -4.1923 2.892e-05 ***
 bweight      0.00022338  0.00001807 12.3622 < 2.2e-16 ***
 ---
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+### Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 The results show that prenatal care is significant in both cases even after considering other confounders. This suggests that prenatal care has a meaningful impact on infant birth weight, regardless of the presence of other covariates.
 ===============================================
