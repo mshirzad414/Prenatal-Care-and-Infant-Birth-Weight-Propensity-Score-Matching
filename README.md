@@ -11,6 +11,7 @@ For code used in this study, please refer to the care_psm.R in the repository.
 We begin by loading the data and observing the distribution of the outcome variable, noting how it differs between treated and untreated units.
 In this study, the outcome variable is birth weight (bweight), the treatment dummy variable is prenatal1, and other factors represent observable covariates.
 
+
 ![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/2a64cc7e-e17d-44bf-a879-2b3608a49e9d)
 
 
@@ -25,6 +26,7 @@ Now, let's consider the main study objective: to investigate the impact of prena
 ## Second stage:
 We match each prenatal1=1 (treated) and =0 (not treated) based on their propensity scores, which are calculated using a range of covariates. To perform this matching, we utilize the Matchit package in R and evaluate the results as follows:
 The below shows the summart of balance for all data using propensity score matching:
+
 ![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/2d9cf7e7-c1ef-4925-9f9b-755cfeb82068)
 
 
@@ -32,6 +34,7 @@ The last section of the figures below shows that there are 3,720 treated units a
 
 Applied researchers may sometimes be concerned about discarding a large number of unmatched participants. However, this is usually not an issue if all treated participants are matched, and good balance is achieved.
 Below illustrates the matching process across observations using both desity and histogram illustration
+
 ![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/50eefc0e-8cd9-41a7-81e4-b8e3c8b1ed2e)
 
 ![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/8cae698a-fd24-42d5-938b-83f647b1ba04)
@@ -40,6 +43,7 @@ Below illustrates the matching process across observations using both desity and
 ## Third Stage:
 
 Now we shows the mean-differnce of the outcome variable across treated and not trated unit using matched data constructed before.The bar chart shows a differnece of over 300 grams in infanct weight across treated units and control units, which is higher compared to mean-differnece of infanct weight in the original data. 
+
 ![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/9288c4e2-a14f-4c57-915e-455103eebe54)
 
 Next; We run regression over the matched data to analyze the impact of prenatal care on infant birth weight, both with and without considering other covariates. This analysis helps us understand the direct effect of prenatal care on birth weight while controlling for potential confounding factors.
