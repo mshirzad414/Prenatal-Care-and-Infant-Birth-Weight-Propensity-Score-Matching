@@ -28,8 +28,6 @@ The below shows the summart of balance for all data using propensity score match
 
 
 
-
-
 The last section of the figures below shows that there are 3,720 treated units and 922 untreated or control units in the original sample. All control units are matched to corresponding treated units. The remaining 2,798 non-treated units are not matched to any treated units and can be discarded in subsequent analysis.
 
 Applied researchers may sometimes be concerned about discarding a large number of unmatched participants. However, this is usually not an issue if all treated participants are matched, and good balance is achieved.
@@ -52,51 +50,13 @@ Now we shows the mean-differnce of the outcome variable across treated and not t
 
 Next; We run regression over the matched data to analyze the impact of prenatal care on infant birth weight, both with and without considering other covariates. This analysis helps us understand the direct effect of prenatal care on birth weight while controlling for potential confounding factors.
 
-t test of coefficients:
-           Estimate  Std. Error t value  Pr(>|t|)    
-(Intercept) -0.25772977  0.06147678 -4.1923 2.892e-05 ***
-bweight      0.00022338  0.00001807 12.3622 < 2.2e-16 ***
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/f98f034f-e5af-4380-b939-8a7aae3ce779)
+
 
 The results show that prenatal care is significant in both cases even after considering other confounders. This suggests that prenatal care has a meaningful impact on infant birth weight, regardless of the presence of other covariates.
-===============================================
-                        Dependent variable:    
-                    ---------------------------
-                             prenatal1         
------------------------------------------------
-bweight                      0.0001***         
-                             (0.00001)         
-                                               
-mbsmokesmoker                -0.062***         
-                              (0.020)          
-                                               
-mmarriednotmarried           -0.237***         
-                              (0.019)          
-                                               
-mage                         0.027***          
-                              (0.001)          
-                                               
-fbabyYes                     0.212***          
-                              (0.014)          
-                                               
-medu                         0.060***          
-                              (0.003)          
-                                               
-alcohol                       -0.069*          
-                              (0.038)          
-                                               
-Constant                     -1.236***         
-                              (0.064)          
-                                               
------------------------------------------------
-Observations                   1,844           
-R2                             0.687           
-Adjusted R2                    0.685           
-Residual Std. Error      0.281 (df = 1836)     
-F Statistic          574.614*** (df = 7; 1836) 
-===============================================
-Note:               *p<0.1; **p<0.05; ***p<0.01
+
+![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/b309a4d1-c1b0-408f-b458-8dbf41dfc62a)
+
 
 ##Lastly, 
 
