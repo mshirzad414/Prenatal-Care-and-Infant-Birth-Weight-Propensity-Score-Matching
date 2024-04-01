@@ -13,10 +13,10 @@ In this study, the outcome variable is birth weight (bweight), the treatment dum
 ![Alt Text](http://127.0.0.1:37201/graphics/04b9417b-9f0d-496f-a23d-f2e285a05677.png)
 
 
-  prenatal1 mean_bweight
-      <dbl>        <dbl>
-1         0        3244.
-2         1        3391.
+ ### prenatal1 mean_bweight
+ ###     <dbl>        <dbl>
+ ### 1     0        3244.
+ ### 2     1        3391.
 
 The initial datasets includes that the mean-difference across trated and control units for the outcome variable is around 150 grams
 
