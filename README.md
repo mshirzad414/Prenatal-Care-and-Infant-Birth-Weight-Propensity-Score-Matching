@@ -14,7 +14,7 @@ In this study, the outcome variable is birth weight (bweight), the treatment dum
 
 
 
- prenatal1 mean_bweight
+prenatal1 mean_bweight
       <dbl>        <dbl>
 1         0        3244.
 2         1        3391.
