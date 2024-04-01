@@ -10,7 +10,8 @@ For code used in this study, please refer to the care_psm.R in the repository.
 ## First stage:
 We begin by loading the data and observing the distribution of the outcome variable, noting how it differs between treated and untreated units.
 In this study, the outcome variable is birth weight (bweight), the treatment dummy variable is prenatal1, and other factors represent observable covariates.
-![image](https://github.com/mshirzad414/Prenatal-Care-and-Infant-Birth-Weight-Propensity-Score-Matching/assets/140922484/499bf0a7-f28b-4ca0-87eb-a0c6196df3a5)
+<img src="http://127.0.0.1:37201/graphics/04b9417b-9f0d-496f-a23d-f2e285a05677.png" alt="Alt Text" width="200"/>
+
   prenatal1 mean_bweight
       <dbl>        <dbl>
 1         0        3244.
